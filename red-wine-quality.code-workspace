@@ -26,10 +26,7 @@
 			"**/__pycache__": true,
 		},
 		"python.analysis.diagnosticMode": "openFilesOnly",
-		"python.analysis.typeCheckingMode": "off",
-		"python.analysis.diagnosticSeverityOverrides": {
-			"reportGeneralTypeIssues": "none"
-		},
+		"python.analysis.typeCheckingMode": "off"
 	},
 	"extensions": {
 		"recommendations": [
