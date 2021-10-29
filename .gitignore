@@ -130,3 +130,6 @@ dmypy.json
 
 # Mlflow files
 mlruns/
+bin/
+img/
+results/

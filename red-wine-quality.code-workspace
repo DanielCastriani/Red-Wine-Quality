@@ -20,6 +20,9 @@
 		"files.exclude": {
 			"**/.venv": true,
 			"**/__pycache__": true,
+			"**/bin": true,
+			"**/results": true,
+			"**/mlruns": true,
 		},
 		"files.watcherExclude": {
 			"**/.venv/*/**": true,
