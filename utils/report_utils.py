@@ -20,16 +20,18 @@ def feature_importance(model: BaseForest, x: pd.DataFrame):
 def shap_report(model: BaseForest, x: pd.DataFrame, show: bool = True):
     explainer = shap.Explainer(model)
     shap_values = explainer(x)
-    
-    plt.plot()
+
+    fig = plt.figure()
 
     shap.plots.beeswarm(shap_values, show=False)
 
-    shap_path = make_path('result/', file_name='shap.png')
+    shap_path = make_path('results/', file_name='shap.png')
 
     plt.savefig(shap_path)
 
     if show:
         plt.show()
+
+    plt.close(fig)
 
     return shap_path
