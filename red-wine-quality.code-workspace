@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.formatting.autopep8Args": [
+			"--max-line-length",
+			"140",
+			"--experimental"
+		],
+		"python.sortImports.args": [
+			"-l",
+			"140"
+		],
+		"python.languageServer": "Pylance",
+		"jupyter.sendSelectionToInteractiveWindow": true,
+		"jupyter.notebookFileRoot": "${workspaceFolder}",
+		"files.exclude": {
+			"**/.venv": true,
+			"**/__pycache__": true,
+		},
+		"files.watcherExclude": {
+			"**/.venv/*/**": true,
+			"**/__pycache__": true,
+		},
+		"python.analysis.diagnosticMode": "openFilesOnly",
+		"python.analysis.typeCheckingMode": "off",
+		"python.analysis.diagnosticSeverityOverrides": {
+			"reportGeneralTypeIssues": "none"
+		},
+	},
+	"extensions": {
+		"recommendations": [
+			"eamodio.gitlens",
+			"ms-toolsai.jupyter",
+			"pkief.material-icon-theme",
+			"ms-python.vscode-pylance",
+			"ms-python.python",
+			"njpwerner.autodocstring",
+		]
+	}
+}
